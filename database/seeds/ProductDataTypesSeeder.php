@@ -226,6 +226,24 @@ class ProductDataTypesSeeder extends Seeder
 
         $dataRow = DataRow::firstOrNew([
             'data_type_id' => $dataType->id,
+            'field'        => 'gender',
+        ]);
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'gender',
+                'required'     => 1,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'details'      => '',
+            ])->save();
+        }
+
+        $dataRow = DataRow::firstOrNew([
+            'data_type_id' => $dataType->id,
             'field'        => 'created_at',
         ]);
         if (!$dataRow->exists) {

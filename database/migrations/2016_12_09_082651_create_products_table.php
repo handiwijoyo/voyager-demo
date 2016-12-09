@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('measurement')->nullable();
             $table->boolean('active')->default(0);
             $table->text('images')->nullable();
+            $table->enum('gender', ['woman', 'man'])->default('woman');
             $table->timestamps();
             $table->softDeletes();
         });
