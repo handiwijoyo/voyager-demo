@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(VoyagerDatabaseSeeder::class);
         $this->call(VoyagerDummyDatabaseSeeder::class);
         $this->call(ProductDataTypesSeeder::class);
+        $this->call(ProductCategoriesDataTypeSeeder::class);
         $this->call(PermissionRoleTableSeeder::class); // Re-run permission seeder
     }
 }
