@@ -1,4 +1,4 @@
-<a href="https://styleci.io/repos/76014128/shield?style=flat"><img src="https://styleci.io/repos/76014128/shield?style=flat" alt="Build Status"></a>
+<a href="https://styleci.io/repos/76014128"><img src="https://styleci.io/repos/76014128/shield?style=flat" alt="Build Status"></a>
 
 ## VOYAGER DEMO PROJECT
 
