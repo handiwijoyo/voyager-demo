@@ -38,7 +38,7 @@ class ProductDataTypesSeeder extends Seeder
         $menuItem = MenuItem::firstOrNew([
             'menu_id'    => $menu->id,
             'title'      => 'Products',
-            'url'        => route('voyager.products.index', [], false),
+            'url'        => '/admin/products',
         ]);
         if (!$menuItem->exists) {
             $menuItem->fill([
