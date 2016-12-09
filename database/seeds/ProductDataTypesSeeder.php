@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Models\DataRow;
+use TCG\Voyager\Models\DataType;
+use TCG\Voyager\Models\Menu;
+use TCG\Voyager\Models\MenuItem;
+use TCG\Voyager\Models\Permission;
 
 class ProductDataTypesSeeder extends Seeder
 {
@@ -23,6 +28,25 @@ class ProductDataTypesSeeder extends Seeder
                 'model_name'            => 'App\Models\Product',
                 'generate_permissions'  => 1,
                 'description'           => '',
+            ])->save();
+        }
+
+        Permission::generateFor('products');
+
+        $menu = Menu::where('name', 'admin')->firstOrFail();
+
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id'    => $menu->id,
+            'title'      => 'Products',
+            'url'        => route('voyager.products.index', [], false),
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-shop',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 12,
             ])->save();
         }
 
