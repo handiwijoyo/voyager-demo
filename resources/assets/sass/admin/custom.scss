@@ -1,0 +1,89 @@
+$color-flat-blue: #62a8ea;
+
+/* Nav Tabs */
+.nav-tabs {
+  li.active > a:hover {
+    background-color: $color-flat-blue !important;
+  }
+
+  li > a:hover {
+    background-color: #DDD !important;
+  }
+}
+
+/* Page Content */
+.page-content {
+  label {
+    font-weight: 500;
+  }
+}
+
+/* Date Picker */
+.datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
+  background-image: none !important;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover {
+  background-image: none !important;
+}
+
+.datepicker table tr td span.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active:hover {
+  background-image: none !important;
+}
+
+.product-images {
+  border: 1px solid #EEE;
+  min-height: 400px;
+}
+
+.btn-sm {
+  padding: 6px 13px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+
+.table .dropdown-menu>li>a {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.table .dropdown-menu .divider {
+  margin: 9px 0;
+}
+
+.table .dropdown-menu>li:last-child>a {
+  margin-bottom: 0;
+}
+
+.product-images {
+  padding: 15px;
+}
+
+.draggable {
+  cursor: move;
+}
+
+.dataTable .popover-content {
+  padding: 10px;
+}
+
+ul.product-categories {
+  li.parent {
+    margin-bottom: 5px;
+  }
+  ul.child {
+    padding-left: 20px;
+  }
+}
+
+
+
+
