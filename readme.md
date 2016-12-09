@@ -20,7 +20,7 @@ What's included?
 - [ ] E-commerce workflow
 
 ### Install:
-You can [download the .zip](https://github.com/handiwijoyo/voyager-demo/archive/master.zip) file or clone this project
+You can [download latest release .zip file](https://github.com/handiwijoyo/voyager-demo/releases) or clone this project
 ```bash
 git clone https://github.com/handiwijoyo/voyager-demo
 ```
