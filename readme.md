@@ -16,6 +16,9 @@ What's included?
 - [ ] Product Stock Update.
 - more..
 
+#### Front-End web pages.
+- [ ] E-commerce workflow
+
 ### Install:
 You can [download the .zip](https://github.com/handiwijoyo/voyager-demo/archive/master.zip) file or clone this project
 ```bash
