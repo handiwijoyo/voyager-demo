@@ -39,7 +39,7 @@ cp .env.example .env
 
 Generate application key:
 ```
-php artisan generate:key
+php artisan key:generate
 ```
 
 Update your database credentials in .env:
