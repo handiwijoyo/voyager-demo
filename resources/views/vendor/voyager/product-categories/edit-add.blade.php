@@ -64,7 +64,7 @@
                                 <?php $selected = (isset($dataTypeContent->parent_id)) ? old('parent_id', $dataTypeContent->parent_id) : old('parent_id'); ?>
                                 <select name="parent_id" id="parent_id" class="form-control">
                                     <option value="0">-- Select Parent Category --</option>
-                                    @foreach(\App\ProductCategory::where('parent_id', 0)->get() as $item)
+                                    @foreach(\App\Models\ProductCategory::where('parent_id', 0)->get() as $item)
                                         <option value="{{$item->id}}">{{$item->display_name}}</option>
                                     @endforeach
                                 </select>

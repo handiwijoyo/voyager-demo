@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\DataRow;
 use TCG\Voyager\Models\DataType;
 use TCG\Voyager\Models\Menu;
+use TCG\Voyager\Models\MenuItem;
 use TCG\Voyager\Models\Permission;
 
 class ProductCategoriesDataTypeSeeder extends Seeder
@@ -42,7 +43,7 @@ class ProductCategoriesDataTypeSeeder extends Seeder
         if (!$menuItem->exists) {
             $menuItem->fill([
                 'target'     => '_self',
-                'icon_class' => 'voyager-shop',
+                'icon_class' => 'voyager-list',
                 'color'      => null,
                 'parent_id'  => null,
                 'order'      => 12,

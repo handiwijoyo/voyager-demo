@@ -348,7 +348,7 @@
             });
 
             CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-            var imageWidth = 762, imageHeight = 1100;
+            //var imageWidth = 762, imageHeight = 1100;
             $("#upload").dropzone({
                 url: "{{ route('voyager.media.upload') }}",
                 previewsContainer: "#uploadPreview",
@@ -360,7 +360,7 @@
                         });
                     }
                 },
-                init: function () {
+                /*init: function () {
                     this.on("thumbnail", function (file) {
                         if (file.width !== imageWidth || file.height !== imageHeight) {
                             file.rejectDimensions()
@@ -375,7 +375,7 @@
                     file.rejectDimensions = function () {
                         done("Image size must: " + imageWidth + "x" + imageHeight + "px");
                     };
-                },
+                },*/
                 acceptedFiles: ".jpeg,.jpg,.png,.gif",
                 processing: function () {
                     $('#uploadProgress').fadeIn();
