@@ -1,3 +1,5 @@
+<a href="https://styleci.io/repos/76014128/shield?style=flat"><img src="https://styleci.io/repos/76014128/shield?style=flat" alt="Build Status"></a>
+
 ## VOYAGER DEMO PROJECT
 
 This is a demo project using [Voyager](https://github.com/the-control-group/voyager) package for Laravel. Feel free to use, modify or whatever you like with this project.
