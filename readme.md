@@ -22,6 +22,11 @@ You can [download the .zip](https://github.com/handiwijoyo/voyager-demo/archive/
 git clone https://github.com/handiwijoyo/voyager-demo
 ```
 
+Enter the voyager-demo directory
+```bash
+cd voyager-demo
+```
+
 Install composer dependencies:
 ```bash
 composer install
